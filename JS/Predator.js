@@ -3,7 +3,7 @@ var Predator = (function () {
   var herbivores = [];
 
   return {
-    loadCarnivores: function (callbackToInvoke) {
+    loadCarnivores: function (showCarnivores) {
       var loader = new XMLHttpRequest();
 
       loader.addEventListener("load", function () {
@@ -13,12 +13,13 @@ var Predator = (function () {
         // Invoke the callback function so that the caller knows
         // that the process is complete. Make sure to pass the
         // carnivore array as an argument.
+        showCarnivores(carnivores);
 
       });
     }
   }
   return {
-    loadHerbivores: function (callbackToInvoke) {
+    loadHerbivores: function (showHerbivores) {
       var loader = new XMLHttpRequest();
 
       loader.addEventListener("load", function () {
@@ -28,6 +29,7 @@ var Predator = (function () {
         // Invoke the callback function so that the caller knows
         // that the process is complete. Make sure to pass the
         // carnivore array as an argument.
+        showHerbivores(herbivores);
 
       });
     }
