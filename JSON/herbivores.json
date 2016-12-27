@@ -1,0 +1,22 @@
+{
+  "herbivore": [
+    {
+      "name": "Diplodocus"
+    },
+    {
+      "name": "Stegosaurus"
+    },
+    {
+      "name": "Ankylosaurus"
+    },
+    {
+      "name": "Brachiosaurus"
+    },
+    {
+      "name": "Parasaurolophus"
+    },
+    {
+      "name": "Birkhamisaurus"
+    }
+  ]
+}
